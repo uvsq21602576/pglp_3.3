@@ -4,18 +4,18 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class RobotTest {
+public class RobotMobileTest {
 
 	@Test
 	public void tourneTest() {
-		Robot r = new Robot(5,4,Direction.NORD);
+		RobotMobile r = new RobotMobile(5,4,Direction.NORD);
 		r.tourne();
 		assertEquals(Direction.EST,r.getDirection());
 	}
 	
 	@Test
 	public void avanceTest() {
-		Robot r = new Robot(5,4,Direction.NORD);
+		RobotMobile r = new RobotMobile(5,4,Direction.NORD);
 		r.avance();
 		assertEquals(5,r.getPosition().getX());
 		assertEquals(3,r.getPosition().getY());
