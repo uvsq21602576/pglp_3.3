@@ -8,10 +8,10 @@ public class PositionTest {
 
 	@Test
 	public void changerPositonTest() {
-		Position p = new Position(5,4);
-		p.changerPosition(-1,+1);
-		assertEquals(4,p.getX());
-		assertEquals(5,p.getY());
+		Position p = new Position(5, 4);
+		p.changerPosition(-1, +1);
+		assertEquals(4, p.getX());
+		assertEquals(5, p.getY());
 	}
 
 }
